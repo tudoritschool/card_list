@@ -1,19 +1,20 @@
 import "./App.css";
 import Product from "./components/Product";
 import { Container, Row, Col } from "reactstrap";
+import PageTitle from "./styled_components/PageTitle.style";
 
 function App() {
 	return (
 		<Container>
 			<Row>
 				<Col lg={{ offset: 4, size: 4 }}>
-					<h1>Pagina cu produse</h1>
+					<PageTitle>Pagina cu produse</PageTitle>
 				</Col>
 			</Row>
-			<Row>
+			<Row className='row_background'>
 				<Col lg='3' md='6' sm='12'>
 					<Product
-						title='Rochie'
+						title='Rochie de mireasa'
 						description='Rochie de mireasa'
 						price={3000}
 					/>
